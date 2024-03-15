@@ -10,7 +10,7 @@ body {
     align-items: center;
     background-color: #333; /* Menu background color */
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 
     
 }
@@ -77,9 +77,15 @@ body {
 
 .app-info {
     display: flex;
+    margin-top: 10px;
     align-items: center;
 }
-
+.card .download_app_logo{
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ccc; /* Placeholder color */
+}
 .app-logo {
     width: 100px; /* Adjust as needed */
     height: 100px; /* Adjust as needed */
@@ -102,7 +108,8 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    size: 5px;
+    size: 3px;
+    margin-top: 20px;
 }
 
 .downloads > div {
@@ -375,13 +382,14 @@ body {
 }
 
 .footer-content {
+   
     display: flex;
     justify-content: space-around;
 }
 
 .footer-section {
     flex: 1;
-    margin: 0 20px;
+    margin: 1px;
 }
 
 .footer-section h2 {
@@ -483,3 +491,62 @@ body {
 #closeVipDialog:hover {
     background-color: #666; /* Dark gray background on hover */
 }
+
+
+.about-app {
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.about-app h3 {
+    color: #cccccc; /* Dark green heading color */
+}
+
+#aboutAppBtn {
+    background-color: #006400; /* Dark green button background */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+}
+
+#aboutAppBtn:hover {
+    background-color: #004d00; /* Dark green background on hover */
+}
+
+/* About App dialogue */
+.aboutAppDialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #292929; /* Dark green background */
+    color: #fff; /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.aboutAppDialog h3 {
+    margin-top: 0;
+}
+
+.aboutAppDialog p {
+    margin-bottom: 10px;
+}
+
+.aboutAppDialog button {
+    background-color: #af4c4c; /* Darker green button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aboutAppDialog button:hover {
+    background-color: #a04545; /* Darker green on hover */
+}
+

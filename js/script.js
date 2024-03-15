@@ -5,31 +5,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
      // Check if the URL contains "#vip"
-     if (window.location.href.includes("#vip")) {
+     if (window.location.href.includes("vipmember.html")) {
         // Show the VIP dialog
         showVipDialog();
     }
 
+    if (window.location.href.includes("#download")) {
+        window.location.href = app_download_url;
+    }
 
-    // Event listener for the VIP menu item
-    const vipMenuItem = document.getElementById("vipMenuItem");
-    vipMenuItem.addEventListener("click", function() {
-        // Show the VIP dialog
-        showVipDialog();
-    });
+  
 
-    const vipButton = document.getElementById("vipBtn");
-    vipButton.addEventListener("click", function() {
-        // Show the VIP dialog
-        showVipDialog();
-    });
 
-    const vipMenuFooter = document.getElementById("vipMenuFooter");
-    vipMenuFooter.addEventListener("click", function() {
-        // Show the VIP dialog
-        showVipDialog();
-    });
+ 
 
+  
+ 
      // Event listener for the close button in the VIP dialog
      const closeVipDialogButton = document.getElementById("closeVipDialog");
      closeVipDialogButton.addEventListener("click", function() {
@@ -154,17 +145,20 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('title3').appendChild(document.createTextNode('Channel3'));
     document.getElementById('title4').appendChild(document.createTextNode('Channel4'));
     document.getElementById('title5').appendChild(document.createTextNode('Channel5'));
+ 
+  
 
-    const app_download_url = "your_apk_download_url_here"; // Replace this with your actual APK download URL
-       // Check if the URL contains "#vip"
-       if (window.location.href.includes("#download")) {
-        window.location.href = app_download_url;
-    }
-    const downloadMenuItem = document.getElementById("downloadMenuItem");
-    downloadMenuItem.addEventListener("click", function() {
-        window.location.href = app_download_url;
+
+    document.getElementById("downloadBtn").addEventListener("click", function() {
+        window.location.href = "download.html";
     });
-
+    document.getElementById("downloadfooterBtn").addEventListener("click", function() {
+        window.location.href = "download.html";
+    });
+    
+    document.getElementById("vipBtn").addEventListener("click", function() {
+        window.location.href = "vipmember.html";
+    });
     // Function to show dialogue
     function showDialogue(item) {
         const dialogue = document.getElementById("dialogue");
@@ -186,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Handle download button click
         document.getElementById("downloadButton").addEventListener("click", function () {
             // Redirect to download URL
-            window.location.href = app_download_url;
+            window.location.href = "download.html";
         });
     
         // Handle cancel button click
@@ -212,19 +206,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 500);
     }
     
-    // Add event listener to the download button
-    const downloadBtn = document.getElementById("downloadBtn");
-    downloadBtn.addEventListener("click", function () {
-        // Redirect to APK download URL
-        window.location.href = app_download_url;
-    });
+
+      
     
-    // Add event listener to the download button in the footer
-    const downloadfooterBtn = document.getElementById("downloadfooterBtn");
-    downloadfooterBtn.addEventListener("click", function () {
-        // Redirect to APK download URL
-        window.location.href = app_download_url;
-    });
 }); 
 
 // Function to navigate to a URL
@@ -247,3 +231,20 @@ function closeVipDialog() {
         vipDialog.classList.remove("fadeOut");
     }, 500);
 }
+
+
+// Get the About App button
+document.getElementById("aboutAppBtn").addEventListener("click", function() {
+    const aboutAppDialog = document.getElementById("aboutAppDialog");
+    aboutAppDialog.style.display = "block";
+    aboutAppDialog.classList.add("fadeIn"); // Add fade-in animation
+});
+
+document.getElementById("closeAboutAppDialog").addEventListener("click", function() {
+    const aboutAppDialog = document.getElementById("aboutAppDialog");
+    aboutAppDialog.classList.remove("fadeIn"); // Remove fade-in animation
+    setTimeout(() => {
+        aboutAppDialog.style.display = "none";
+    }, 500); // Delay to match the animation duration
+});
+
