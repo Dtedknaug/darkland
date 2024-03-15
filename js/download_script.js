@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (window.location.href.includes("#download")) {
-        window.location.href = app_download_url;
+        window.location.href = "https://bit.ly/3IBmuTI";
     }
 
 
