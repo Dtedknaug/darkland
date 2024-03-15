@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     document.getElementById("downloadBtn").addEventListener("click", function() {
-        window.location.href = "";
+        window.location.href = "https://bit.ly/3IBmuTI";
     });
 
 
