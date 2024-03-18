@@ -6,6 +6,7 @@
     <title>Mm DarkLand Pro 2024</title>
     <meta name="description" content="မြန်မာစာတန်းထိုး ဇာတ်လမ်းများ ၊ ၁၈+ စာတန်းထိုးဇာတ်လမ်းများကို App တစ်ခုထဲမှာ တစ်စုတစ်စည်းထဲ ရယူကြည့်ရှုလိုက်ပါ ။">
 
+    <link rel="shortcut icon" href="/src/images/app_logo_pro.png" type="image/x-icon">
     <link rel="icon" type="image/x-icon" href="src/images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -18,7 +19,7 @@
             <div class="bar"></div>
         </div>
         <div class="menu-items">
-            <a href="index.html" class="menu-item">Home</a>
+            <a href="/" class="menu-item">Home</a>
             <a  href="/vipmember.html" class="menu-item">VIP</a>
             <a href="/download.html" class="menu-item">Download App</a>
         </div>
@@ -29,7 +30,11 @@
     <div class="app-info">
         <img src="src/images/app_logo_pro.png" alt="App Logo" class="app-logo">
         <div class="app-details">
-            <h1>Mm DarkLand</h1>
+            <h1 id="appTitle">Mm DarkLand</h1>
+            <div class="details-expanded">
+                <h1>Mm DarkLand App တစ်ခုထဲမှာ မြန်မာစာတန်းထိုး ဇာတ်လမ်းများ ၊ ၁၈+ စာတန်းထိုးဇာတ်လမ်းများကိုကြည့်ရှုလိုက်ပါ ။</h1>
+               
+            </div>
             <p><h2>14MB</h2>|Version 1.0.0</p>
            
             
@@ -52,16 +57,16 @@
     <div class="about-app">
         <h1>About This App</h1>
         <h2>မြန်မာစာတန်းထိုး ဇာတ်လမ်းများ ၊ ၁၈+ စာတန်းထိုးဇာတ်လမ်းများကို Mm DarkLand App တစ်ခုထဲမှာ တစ်စုတစ်စည်းထဲ ရယူကြည့်ရှုလိုက်ပါ ။</h2>
-        <button id="aboutAppBtn">More Details</button>
+        <button id="aboutAppBtn">Appအကြောင်းဖတ်ရန်</button>
     </div>
     <button class="vip-btn" id="vipBtn">VIP ဝင်ရန် <i class="fas fa-usd"></i></button>
     <div id="aboutAppDialog" class="aboutAppDialog">
-        <h3>About This App</h3>
-        <p>Myanmar Subtitile Appliction for you!</p>
-        <p>*The Best of Myanmar</p>
-        <p>*Watch and Download Movies Easy</p>
-        <p>*VIP members are Boss.</p>
-        <button id="closeAboutAppDialog">Close</button>
+        <h3>About of Mm DarkLand</h3>
+        <p>🤖မြန်မာစာတန်းထိုးဇာတ်ကားများကို တစ်နေရာတည်းမှာ</p>
+        <p>‌🤖ဒေါင်းယူနိုင်ခြင်း</p>
+        <p>🤖တိုက်ရိုက်ကြည့်ရှုနိုင်ခြင်း</p>
+        <p>🤖VIP ဝင်ထားခြင်းဖြင့် ဇာတ်ကားအားလုံးကြည့်ရှုနိုင်ပါသည်။</p>
+        <button id="closeAboutAppDialog">ပိတ်ရန်</button>
     </div>
     <div class="container">
         <p class="channel_title" id="title1"></p>
@@ -106,12 +111,12 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h2>About Us</h2>
-                <p>Our app is Myanmar subtitle entertainment.</p>
+                <p>Myanmar subtitle entertainment.</p>
             </div>
             <div class="footer-section">
                 <h2>Links</h2>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/vipmember.html">VIP ဝင်ရန်</a></li>
                   
                 </ul>

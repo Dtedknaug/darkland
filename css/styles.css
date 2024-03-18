@@ -3,6 +3,18 @@ body {
     background-color: #121212; /* Dark blue background */
     color: #fff; /* White text */
     font-family: Arial, sans-serif;
+    
+}
+@media screen and (max-width: 768px) {
+     h1,h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+     h1,h2 {
+        font-size: 18px; /* Further adjust font size for smaller screens */
+    }
 }
 .menu {
     display: flex;
@@ -83,7 +95,8 @@ body {
 .card .download_app_logo{
     width: 100px; /* Adjust as needed */
     height: 100px; /* Adjust as needed */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
+    margin-top: 10px; /* Rounded corners */
     background-color: #ccc; /* Placeholder color */
 }
 .app-logo {
@@ -92,12 +105,37 @@ body {
     border-radius: 10px; /* Rounded corners */
     background-color: #ccc; /* Placeholder color */
 }
-
+ 
 .app-details {
-    
-    margin-left: 20px; /* Adjust spacing */
+    margin-left: 20px;
+    position: relative;
 }
 
+.app-details .details-expanded {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #484848;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.app-details .details-expanded.active {
+    display: block;
+}
+
+#appTitle {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#appTitle:hover {
+    color: blue; /* Change color on hover */
+}
 .app-details h2 {
     margin: 0;
     font-size: 24px; /* Adjust as needed */
@@ -360,7 +398,7 @@ body {
 
     .card img {
         width: 120px;
-        height: 120px;
+        height: 300px;
     }
 }
 

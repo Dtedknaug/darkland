@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = app_download_url;
     }
 
+    const appTitle = document.getElementById('appTitle');
+    const detailsExpanded = document.querySelector('.app-details .details-expanded');
+
+    appTitle.addEventListener('click', function() {
+        detailsExpanded.classList.toggle('active');
+    });
   
 
 
