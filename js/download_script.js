@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (window.location.href.includes("#download")) {
-        window.location.href = "https://bit.ly/3IBmuTI";
+        window.location.href = "https://github.com/darklandadmin/darkland/raw/main/apk/mmdarkland-v-1.0.2.apk";
     }
 
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     document.getElementById("downloadBtn").addEventListener("click", function() {
-        window.location.href = "https://bit.ly/3IBmuTI";
+        window.location.href = "https://github.com/darklandadmin/darkland/raw/main/apk/mmdarkland-v-1.0.2.apk";
     });
 
 
