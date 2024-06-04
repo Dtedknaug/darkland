@@ -28,10 +28,12 @@
 .app-name-container{
 padding-left: 10px;
 transform: translateY(-10px);
+
 }
 .app-name{
     font-size: 20px;
     font-weight: 400;
+    
 }
 .dev-name{
     color: #3b55ff;
