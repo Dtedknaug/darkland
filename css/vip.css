@@ -29,6 +29,7 @@
 .app-name-container{
 padding-left: 10px;
 transform: translateY(-10px);
+padding-top: 10px;
 }
 .app-name{
     font-size: 20px;
@@ -96,7 +97,7 @@ transform: translateY(-10px);
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .ss-img{
     width: 170px;
