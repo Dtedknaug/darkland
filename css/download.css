@@ -80,6 +80,7 @@ padding-top: 10px;
     font-size: 12px;
     margin-bottom: 0;
     color: #747373;
+    width: 100%;
 }
 
 .button-download{
@@ -117,7 +118,7 @@ padding-top: 10px;
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .ss-img{
     width: 170px;

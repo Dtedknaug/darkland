@@ -76,11 +76,7 @@ padding-top: 10px;
     font-weight: 100;
     color: #747373;
 }
-.vip-title-button{
-    background-color: transparent;
-    border: 0 solid transparent;
-}
-.button-telegram{
+.button-download{
     width: 100%;
     margin-top: 20px;
     border:0px solid transparent;
@@ -92,6 +88,23 @@ padding-top: 10px;
 }
 .button-download:hover{
     background-color: #212f8f;
+}
+.vip-title-button{
+    background-color: transparent;
+    border: 0 solid transparent;
+}
+.button-telegram{
+    width: 100%;
+    margin-top: 20px;
+    border:0px solid transparent;
+    border-radius: 1000px;
+    padding: 10px 0;
+    font-size: 15px;
+    background-color: #0088cc;
+    color: aliceblue;
+}
+.button-telegram:hover{
+    background-color: #0a374e;
 }
 .screenshort-container{
     display: flex;
